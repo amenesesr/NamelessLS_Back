@@ -5,51 +5,52 @@ import javax.persistence.Id;
 
 @Entity
 public class Usuarios {
+	
 	@Id
-	private long cedula_usuario;
-	private String nombre_usuario;
-	private String email_usuario;
-	private String usuario;
-	private String password;
+	private long cedula_usuarios;
+	private String nombre_usuarios;
+	private String email_usuarios;
+	private String usuario_usuarios;
+	private String password_usuarios;
 	
-	public long getCedula_usuario() {
-		return cedula_usuario;
+	public long getCedula_usuarios() {
+		return cedula_usuarios;
 	}
 	
-	public void setCedula_usuario(long cedula_usuario) {
-		this.cedula_usuario = cedula_usuario;
+	public void setCedula_usuarios(long cedula_usuarios) {
+		this.cedula_usuarios = cedula_usuarios;
 	}
 	
-	public String getNombre_usuario() {
-		return nombre_usuario;
+	public String getNombre_usuarios() {
+		return nombre_usuarios;
 	}
 	
-	public void setNombre_usuario(String nombre_usuario) {
-		this.nombre_usuario = nombre_usuario;
+	public void setNombre_usuarios(String nombre_usuarios) {
+		this.nombre_usuarios = nombre_usuarios;
 	}
 	
-	public String getEmail_usuario() {
-		return email_usuario;
+	public String getEmail_usuarios() {
+		return email_usuarios;
 	}
 	
-	public void setEmail_usuario(String email_usuario) {
-		this.email_usuario = email_usuario;
+	public void setEmail_usuarios(String email_usuarios) {
+		this.email_usuarios = email_usuarios;
 	}
 	
-	public String getUsuario() {
-		return usuario;
+	public String getUsuario_usuarios() {
+		return usuario_usuarios;
 	}
 	
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setUsuario_usuarios(String usuario_usuarios) {
+		this.usuario_usuarios = usuario_usuarios;
 	}
 	
-	public String getPassword() {
-		return password;
+	public String getPassword_usuarios() {
+		return password_usuarios;
 	}
 	
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPassword_usuarios(String password_usuarios) {
+		this.password_usuarios = password_usuarios;
 	}
-
+	
 }

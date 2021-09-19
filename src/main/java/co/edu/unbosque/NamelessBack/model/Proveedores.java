@@ -7,50 +7,50 @@ import javax.persistence.Id;
 public class Proveedores {
 
 	@Id
-	private long nitproveedor;
-	private String ciudad_proveedor;
-	private String direccion_proveedor;
-	private String nombre_proveedor;
-	private String telefono_proveedor;
+	private long nitproveedor_proveedores;
+	private String ciudad_proveedores;
+	private String direccion_proveedores;
+	private String nombre_proveedores;
+	private String telefono_proveedores;
 	
-	public long getNitproveedor() {
-		return nitproveedor;
+	public long getNitproveedor_proveedores() {
+		return nitproveedor_proveedores;
 	}
 	
-	public void setNitproveedor(long nitproveedor) {
-		this.nitproveedor = nitproveedor;
+	public void setNitproveedor_proveedores(long nitproveedor_proveedores) {
+		this.nitproveedor_proveedores = nitproveedor_proveedores;
 	}
 	
-	public String getCiudad_proveedor() {
-		return ciudad_proveedor;
+	public String getCiudad_proveedores() {
+		return ciudad_proveedores;
 	}
 	
-	public void setCiudad_proveedor(String ciudad_proveedor) {
-		this.ciudad_proveedor = ciudad_proveedor;
+	public void setCiudad_proveedores(String ciudad_proveedores) {
+		this.ciudad_proveedores = ciudad_proveedores;
 	}
 	
-	public String getDireccion_proveedor() {
-		return direccion_proveedor;
+	public String getDireccion_proveedores() {
+		return direccion_proveedores;
 	}
 	
-	public void setDireccion_proveedor(String direccion_proveedor) {
-		this.direccion_proveedor = direccion_proveedor;
+	public void setDireccion_proveedores(String direccion_proveedores) {
+		this.direccion_proveedores = direccion_proveedores;
 	}
 	
-	public String getNombre_proveedor() {
-		return nombre_proveedor;
+	public String getNombre_proveedores() {
+		return nombre_proveedores;
 	}
 	
-	public void setNombre_proveedor(String nombre_proveedor) {
-		this.nombre_proveedor = nombre_proveedor;
+	public void setNombre_proveedores(String nombre_proveedores) {
+		this.nombre_proveedores = nombre_proveedores;
 	}
 	
-	public String getTelefono_proveedor() {
-		return telefono_proveedor;
+	public String getTelefono_proveedores() {
+		return telefono_proveedores;
 	}
 	
-	public void setTelefono_proveedor(String telefono_proveedor) {
-		this.telefono_proveedor = telefono_proveedor;
+	public void setTelefono_proveedores(String telefono_proveedores) {
+		this.telefono_proveedores = telefono_proveedores;
 	}
-	
+
 }

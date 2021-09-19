@@ -7,59 +7,59 @@ import javax.persistence.Id;
 public class Productos {
 
 	@Id
-	private long codigo_producto;
-	private double ivacompra;
-	private long nitproveedor;
-	private String nombre_producto;
-	private double precio_compra;
-	private double precio_venta;
+	private long codigo_productos;
+	private double ivacompra_productos;
+	private long nitproveedor_proveedores;
+	private String nombre_productos;
+	private double precio_compra_productos;
+	private double precio_venta_productos;
 	
-	public long getCodigo_producto() {
-		return codigo_producto;
+	public long getCodigo_productos() {
+		return codigo_productos;
 	}
 	
-	public void setCodigo_producto(long codigo_producto) {
-		this.codigo_producto = codigo_producto;
+	public void setCodigo_productos(long codigo_productos) {
+		this.codigo_productos = codigo_productos;
 	}
 	
-	public double getIvacompra() {
-		return ivacompra;
+	public double getIvacompra_productos() {
+		return ivacompra_productos;
 	}
 	
-	public void setIvacompra(double ivacompra) {
-		this.ivacompra = ivacompra;
+	public void setIvacompra_productos(double ivacompra_productos) {
+		this.ivacompra_productos = ivacompra_productos;
 	}
 	
-	public long getNitproveedor() {
-		return nitproveedor;
+	public long getNitproveedor_proveedores() {
+		return nitproveedor_proveedores;
 	}
 	
-	public void setNitproveedor(long nitproveedor) {
-		this.nitproveedor = nitproveedor;
+	public void setNitproveedor_proveedores(long nitproveedor_proveedores) {
+		this.nitproveedor_proveedores = nitproveedor_proveedores;
 	}
 	
-	public String getNombre_producto() {
-		return nombre_producto;
+	public String getNombre_productos() {
+		return nombre_productos;
 	}
 	
-	public void setNombre_producto(String nombre_producto) {
-		this.nombre_producto = nombre_producto;
+	public void setNombre_productos(String nombre_productos) {
+		this.nombre_productos = nombre_productos;
 	}
 	
-	public double getPrecio_compra() {
-		return precio_compra;
+	public double getPrecio_compra_productos() {
+		return precio_compra_productos;
 	}
 	
-	public void setPrecio_compra(double precio_compra) {
-		this.precio_compra = precio_compra;
+	public void setPrecio_compra_productos(double precio_compra_productos) {
+		this.precio_compra_productos = precio_compra_productos;
 	}
 	
-	public double getPrecio_venta() {
-		return precio_venta;
+	public double getPrecio_venta_productos() {
+		return precio_venta_productos;
 	}
 	
-	public void setPrecio_venta(double precio_venta) {
-		this.precio_venta = precio_venta;
+	public void setPrecio_venta_productos(double precio_venta_productos) {
+		this.precio_venta_productos = precio_venta_productos;
 	}
-
+	
 }

@@ -11,35 +11,35 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.edu.unbosque.NamelessBack.dao.UsuariosDAO;
-import co.edu.unbosque.NamelessBack.model.Usuarios;
+import co.edu.unbosque.NamelessBack.dao.DetalleVentasDAO;
+import co.edu.unbosque.NamelessBack.model.DetalleVentas;
 
 @RestController //esta es una clase REST
-@RequestMapping("usuarios")
-public class UsuariosAPI {
+@RequestMapping("detalle_ventas")
+public class DetalleVentasAPI {
 	
 	@Autowired //inyecta la dependencia de todos los métodos del JPA para usuarioDAO
-	private UsuariosDAO usuariosDAO;
+	private DetalleVentasDAO detalleVentasDAO;
 
 	@PostMapping("/guardar")//Request convierte en un objeto Java desde un JSon
-	public void guardar(@RequestBody Usuarios usuarios) {
-		usuariosDAO.save(usuarios);
+	public void guardar(@RequestBody DetalleVentas detalleVentas) {
+		detalleVentasDAO.save(detalleVentas);
 	}
 	
 	@GetMapping("/listar")
-	public List<Usuarios> listar(){
-		return usuariosDAO.findAll();
+	public List<DetalleVentas> listar(){
+		return detalleVentasDAO.findAll();
 	}
 
 	@DeleteMapping("/eliminar/{id}")
 	public void eliminar(@PathVariable("id") Integer id) {
-		usuariosDAO.deleteById(id);
+		detalleVentasDAO.deleteById(id);
 	}
 	
 	@PutMapping("/actualizar")
-	public void actualizar(@RequestBody Usuarios usuarios) {
-		usuariosDAO.save(usuarios);
+	public void actualizar(@RequestBody DetalleVentas detalleVentas) {
+		detalleVentasDAO.save(detalleVentas);
 	}
-	
 }
+
 
