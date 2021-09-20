@@ -18,7 +18,7 @@ import co.edu.unbosque.NamelessBack.model.Proveedores;
 @RequestMapping("proveedores")
 public class ProveedoresAPI {
 	
-	@Autowired //inyecta la dependencia de todos los métodos del JPA para usuarioDAO
+	@Autowired //inyecta la dependencia de todos los métodos del JPA para proveedoresDAO
 	private ProveedoresDAO proveedoresDAO;
 
 	@PostMapping("/guardar")//Request convierte en un objeto Java desde un JSon

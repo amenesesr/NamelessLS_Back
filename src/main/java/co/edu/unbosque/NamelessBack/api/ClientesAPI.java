@@ -18,7 +18,7 @@ import co.edu.unbosque.NamelessBack.model.Clientes;
 @RequestMapping("clientes")
 public class ClientesAPI {
 	
-	@Autowired //inyecta la dependencia de todos los métodos del JPA para usuarioDAO
+	@Autowired //inyecta la dependencia de todos los métodos del JPA para clientesDAO
 	private ClientesDAO clientesDAO;
 
 	@PostMapping("/guardar")//Request convierte en un objeto Java desde un JSon
