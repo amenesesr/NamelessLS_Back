@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>co.edu.unbosque</groupId>
-	<artifactId>ciclo3back</artifactId>
+	<artifactId>NamelessBack</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ciclo3back</name>
+	<name>NamelessBack</name>
 	<description>Project para el ciclo 3</description>
 	<properties>
 		<java.version>11</java.version>
@@ -29,7 +29,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -46,8 +45,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -56,5 +59,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
